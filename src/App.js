@@ -3,14 +3,14 @@ import './app.css';
 import react from 'react';
 
 export default function App(){
-  const [peso, setPeso] = useState('');
-  const [altura, setAltura] = useState('');
+  const [weight, setWeight] = useState('');
+  const [height, setHeight] = useState('');
 
   const [msg, setMsg] = useState('');
 
-  function calcularImc() {
-    const alt = altura / 100
-    const imc = peso / (alt * alt)
+  function calculateImc() {
+    const alt = height / 100
+    const imc = weight / (alt * alt)
 
     if (imc < 18.5) {
       setMsg(`Você está ABAIXO DO PESO, seu imc é ${imc.toFixed(1)}!`)
@@ -18,8 +18,10 @@ export default function App(){
       setMsg(`Você está com o PESO IDEAL, seu imc é ${imc.toFixed(1)}!`)  
     } else if (imc >= 24.9 && imc < 30) {
       setMsg(`Você está com SOBREPESO, seu imc é ${imc.toFixed(1)}!`)
-    } else {
+    } else if (imc >= 30) {
       setMsg(`Você está com OBESIDADE, seu imc é ${imc.toFixed(1)}!`)
+    } else {
+      setMsg(`[ERRO] Dado inválido, tente novamente!`)
     }
   }
 
@@ -35,16 +37,16 @@ export default function App(){
       <div className="area-input">
         <input type="text"
           placeholder="Peso em (kg) Ex: 90"
-          value={peso}
-          onChange={ (e) => setPeso(e.target.value)}
+          value={weight}
+          onChange={ (e) => setWeight(e.target.value)}
         />
         <input type="text"
           placeholder="Altura em (cm) Ex: 180"
-          value={altura}
-          onChange={ (e) => setAltura(e.target.value)}
+          value={height}
+          onChange={ (e) => setHeight(e.target.value)}
         />
 
-        <button onClick={calcularImc}>
+        <button onClick={calculateImc}>
           Calcular
         </button>
       </div>
