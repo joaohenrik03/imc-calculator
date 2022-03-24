@@ -6,6 +6,7 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
+    color: #261932;
 }
 
 h1 {   
@@ -16,12 +17,11 @@ span {
     margin: 12px 0;
     padding-bottom: 12px;
     width: 31.25rem;
-
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #261932;
 }
 
 .area-input {
-    width: 500px;
+    width: 31.25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,17 +30,17 @@ span {
 .area-input input {
     width: 100%;
     margin-bottom: 12px;
-    height: 45px;
+    height: 2.812rem;
 
     color: white;
-    background-color: rgb(45, 45, 45);
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.479);
+    background-color: #D4CADD;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
 
     border-radius: 8px;
     padding: 0 12px;
 
     text-align: center;
-    font-size: 1.1em;
+    font-size: 1.1rem;
 }
 
 .area-input button {
@@ -48,11 +48,11 @@ span {
     height: 45px;
     border-radius: 8px;
 
-    background-color: #357aff;
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.479);
+    background-color: #A152EF;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
     color: white;
 
-    font-size: 1.1em;
+    font-size: 1.1rem;
 }
 
 h2 {
