@@ -24,6 +24,12 @@ Bibliotecas
 
 - [React JS](https://pt-br.reactjs.org/)
 
+## ▶️ Como executar
+
+- Clone o repositório
+- Rode `npm install` para baixar as dependências
+- Rode o `npm start` para iniciar a aplicação.
+
 ## 💻 Projeto
 
 Calculadora básica de Índice de massa corporal(IMC).
