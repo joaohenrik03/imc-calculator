@@ -27,8 +27,8 @@ Bibliotecas
 ## ▶️ Como executar
 
 - Clone o repositório
-- Rode `npm install` para baixar as dependências.
-- Rode o `npm start` para iniciar a aplicação.
+- Rode `npm install` para baixar as dependências
+- Rode o `npm start` para iniciar a aplicação
 
 ## 💻 Projeto
 
